@@ -1,8 +1,8 @@
 <?php
 /* Plugin Name: loopy
  * Plugin URI: https://github.com/drdf/loopy
- * Description:
- * Version: 0.1.0
+ * Description: For the loopy developers who want to iterate with `foreach` over `WP_Query`.
+ * Version: 1.0.0
  * Author: David Ringsdorf
  * Author URI: https://davidringsdorf.de/
  * License: MIT
@@ -14,8 +14,12 @@ if (!function_exists('loopy')) {
     /**
      * loopy
      *
-     * @author: David Ringsdorf <https://davidringsdorf.de/>
-     * @version 0.1.0
+     * For the loopy developers who want to iterate with `foreach` over `WP_Query`.
+     *
+     * @author David Ringsdorf <https://davidringsdorf.de/>
+     * @package loopy
+     * @version 1.0.0
+     * @license MIT
      */
     function loopy(WP_Query $wpQuery) {
         $wpQuery->rewind_posts();
